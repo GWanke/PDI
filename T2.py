@@ -11,7 +11,9 @@ faces = {
 }
 
 def readInput():
-	face = int(input("Entre com uma face para o cubo(valor entre 1 a 6): "))
+	print("Considere que as faces passadas para o cubo se referem a qual cor tera seu valor igual ao indice, no slicing. As faces sao: ")
+	print("1-Vermelho\n2-Verde\n3-Azul\n4-Amarelo(azul = abs(indice-255))\n5-Magenta(verde = abs(indice-255))\n6-Ciano(vermelho = abs(indice-255))")
+	face = int(input("Entre com uma face para o cubo(valor entre 1 a 6):"))
 	while face <1 or face>6:
 		print("Face invalida. Por favor, entre com um valor de 1 a 6.")
 		face = int(input())
